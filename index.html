@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Thinkers and Makers</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-black w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Thinkers<br>and Makers</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <!--<a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Showcase</a> -->
+    <a href="#podcast" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">The Podcast</a> 
+    <a href="#guests" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Guests</a> 
+    <a href="#host" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Your Host</a> 
+    <!--<a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Packages</a> -->
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-black w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-black w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Company Name</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Thinkers & Makers</b></h1>
+    <h1 class="w3-xxxlarge w3-text-black"><b>Startups and Science in Europe</b></h1>
+    <!--<hr style="width:50px;border:5px solid black" class="w3-round">-->
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <!--
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="/w3images/kitchenconcrete.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+      <img src="/w3images/livingroom.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+      <img src="/w3images/diningroom.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+    </div>
+
+    <div class="w3-half">
+      <img src="/w3images/atrium.jpg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
+      <img src="/w3images/bedroom.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
+      <img src="/w3images/livingroom2.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+    </div>
+  </div>
+  -->
+  <!-- Modal for full size images on click-->
+  <!--
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+  -->
+
+  <!-- The Podcast -->
+  <div class="w3-container" id="podcast" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-black"><b>The Podcast.</b></h1>
+    <hr style="width:50px;border:5px solid black" class="w3-round">
+    <p>Thinkers and Makers are the people who move Europe towards a better, brighter future.
+        Thinkers come up with new ideas, drive technological innovation and scientific progress.
+        Makers take these ideas and turn them into tangible progress, improving peoples everyday lives.
+        In each episode of the thinkers and makers podcast, I sit down with a thinker or maker from Europe,
+        typically scientists or start-up founders and try to understand their journeys:
+        What inspired them to start?
+        What helped them keep going?
+        What are they aspiring to in the future?
+        The format of open-ended questions, each episode fully concentrating on one individual and their work,
+        as well as the impressive list of guests hopefully make this podcast an enriching and inspiring
+        experience for all friends of science, tech and start-ups who want to help build a better Europe for all.</p>
+  </div>
+
+  <!-- Designers -->
+  <div class="w3-container" id="guests" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-black"><b>Recent Guests.</b></h1>
+    <hr style="width:50px;border:5px solid black" class="w3-round">
+    <!--<p>This podcast is all about...
+    </p>-->
+    <!--<p><b>Confirmed Guests</b>:</p>-->
+  </div>
+
+  <!-- Guests -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m3 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://sgp2019.di.unimi.it/images/people/daniel%20cremers.jpg" alt="Daniel Cremers" style="width:100%">
+        <div class="w3-container">
+          <h3>Daniel Cremers</h3>
+          <p class="w3-opacity">Professor TU Munich</p>
+          <p>On how to use Machine Learning to let Computers understand the world.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m3 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="data:image/jpeg;base64,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" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Martin Langer</h3>
+          <p class="w3-opacity">CTO Orora Tech</p>
+          <p>On how to use satelites and Computer Vision to prevent Wildfires.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m3 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://miro.medium.com/max/1400/1*mDJZz-J32F-WeaHDI7bAZA.jpeg" alt="Kaarel Kotkas" style="width:100%">
+        <div class="w3-container">
+          <h3>Kaarel Kotkas</h3>
+          <p class="w3-opacity">Founder of Veriff</p>
+          <p>On how to use technology to detect identity fraud remotely.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m3 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://cdn-images-1.listennotes.com/podcasts/math-life-balance/interview-with-peter-scholze-dUx37vw08y_-0T1GY5i9VAM.1400x1400.jpg" alt="Peter Scholze" style="width:100%">
+        <div class="w3-container">
+          <h3>Peter Scholze</h3>
+          <p class="w3-opacity">Professor of Mathematics, Fields Medallist</p>
+          <p>Mathematics, Creativity, and how to innovate.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Your Host -->
+    <div class="w3-container" id="host" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-black"><b>Your Host.</b></h1>
+      <hr style="width:50px;border:5px solid black" class="w3-round">
+      <p>Friedrich is currently finishing up his Bachelor's Degrees in Economics and Mathematics from TU Berlin.
+          He has studied and done Research at renowned institutions such as Harvard,
+          Max Planck Institute for Mathematics in the Sciences and the German Research
+          Center for Artificial Intelligence. He co-founded Starcode, a non-profit that
+          teaches Girls how to Code. In the fall, he is starting a masters degree in Computer
+          Science at ETH Zurich. He is always working on various startup ideas. You can reach him at
+          friedrich.wicke@protonmail.com or through his website, frido.ai.</p>
+    </div>
+
+
+  <!-- Packages / Pricing Tables -->
+  <!--
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-black"><b>Packages.</b></h1>
+    <hr style="width:50px;border:5px solid black" class="w3-round">
+    <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+        <li class="w3-padding-16">Floorplanning</li>
+        <li class="w3-padding-16">10 hours support</li>
+        <li class="w3-padding-16">Photography</li>
+        <li class="w3-padding-16">20% furniture discount</li>
+        <li class="w3-padding-16">Good deals</li>
+        <li class="w3-padding-16">
+          <h2>$ 199</h2>
+          <span class="w3-opacity">per room</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+        
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-black w3-xlarge w3-padding-32">Pro</li>
+        <li class="w3-padding-16">Floorplanning</li>
+        <li class="w3-padding-16">50 hours support</li>
+        <li class="w3-padding-16">Photography</li>
+        <li class="w3-padding-16">50% furniture discount</li>
+        <li class="w3-padding-16">GREAT deals</li>
+        <li class="w3-padding-16">
+          <h2>$ 249</h2>
+          <span class="w3-opacity">per room</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large w3-hover-black">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  --->
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-black"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid black" class="w3-round">
+    <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-black w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
